@@ -1,0 +1,184 @@
+
+/*            general Styles           */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   /*align items center*/
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   font-size: 16px;
+   background-color: var(--Verylightgrayishblue);
+   color: var(--Darkgrayishblue);
+   font-weight: 500;
+}
+
+main {
+    background-color: var(--White);
+    max-width: 650px;
+
+    padding: 1rem;
+    margin: auto 0;
+    border-radius: 20px;
+}
+
+.notifi > img{
+    width: 7%;
+    height: 10%;
+    margin: 0 0.5rem;
+}
+.notifi {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+
+.name {
+    color: var(--Verydarkblue);
+    font-weight: 700;
+    margin-right: 0.35rem;
+}
+
+.name:hover {
+    color: var(--Blue);
+    cursor: pointer;
+}
+.time {
+    margin: 0.2rem 0;
+}
+
+.red {
+    height: 7px;
+    width: 7px;
+    background-color: var(--Red);
+    border-radius: 50%;
+    /* position: absolute;
+    left: 90%; */
+}
+
+/*          top part         */
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.top h3 span {
+    background-color: var(--Blue);
+    color: var(--White);
+    padding: 0.1rem 0.6rem;
+    border-radius: 4px;
+}
+
+.top p:hover{
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+/******** 1st three************/
+
+.new {
+    background-color: var(--Verylightgrayishblue);
+    border-radius: 11px;
+}
+
+.notifi1 .text strong:hover {
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+.notifi2 .red, .notifi3 .red, .notifi1 .red{
+   margin-top: 0.5rem;
+   margin-left: 0.25rem;
+}
+
+.chess {
+    color: var(--Blue);
+}
+
+
+/* *******     fourth one *******/
+
+.notifi4 {
+    flex-direction: column;
+}
+
+.upper{
+    display: flex;
+}
+
+.notifi4 .upper img{
+    width: 7%;
+    height: 10%;
+    margin: 0 0.5rem;
+}
+
+.private-msg {
+    padding: 1rem;
+    border: 1px solid var(--Grayishblue);
+    border-radius: 5px;
+    width: 70%;
+    margin: 0.7rem auto;
+}
+.private-msg:hover{
+    background-color: var(--Lightgrayishblue1);
+    cursor: pointer;
+}
+
+/******************/
+
+.notifi5 img:last-of-type{
+   margin-right: 50px;
+}
+
+.chess-img:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+/********* media queries**********/
+
+@media screen and (max-width: 570px){
+
+    main {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width:637px){
+
+    .notifi1 {
+        position: relative;
+    }
+.notifi1 .red {
+    margin-top: 1.7rem;
+    position: absolute;
+    left: 21%;
+}
+}
